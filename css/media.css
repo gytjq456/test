@@ -326,6 +326,7 @@
 
 	.popularStory .new .slickSlider .slick-list {
 		max-width: 20.9rem;
+		overflow: hidden;
 	}
 	.popularStory .new .thumSlide .item img {
 		max-width: 100%;
@@ -379,6 +380,10 @@
 		margin:0 auto;
 	}
 
+	.popularStory .slideToon .slick-list { 
+		overflow: hidden;
+	}
+	
 	.popularStory .slideToon .slick-dots { 
 		margin-top: 30px;
 		display: flex;
