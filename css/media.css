@@ -21,7 +21,7 @@
 		display: none !important;
 	}
 
-	/* header m_MenuBtn */
+	/* header */
 	header {
 		height: 100px;
 	}
@@ -383,7 +383,7 @@
 	.popularStory .slideToon .slick-list { 
 		overflow: hidden;
 	}
-	
+
 	.popularStory .slideToon .slick-dots { 
 		margin-top: 30px;
 		display: flex;
@@ -422,3 +422,157 @@
 	}
 }
 
+
+@media (max-width: 639px) {
+	.inner1280 {
+    padding: 0 15px;
+	}
+	
+	#sideMenu a, 
+	.sprite {
+    background-image: url(../image/sprite_mobile.png);
+		background-size: 340px 510px;
+    width: calc(var(--mw) / 2);
+	}
+
+	/* header  */
+	header {
+    height: 50px;
+	}	
+
+	#logo img {
+		max-width:80px ;
+	}
+
+	.m_MenuBtn {
+		right:15px;
+	}
+
+	.m_MenuBtn button {
+		width: 26px;
+	}
+	.m_MenuBtn span {
+		height: 2px;
+	}
+
+	.m_MenuBtn span:not(:last-child) {
+    margin-bottom: 4px;
+	}	
+
+	#sideMenu {
+		width: 240px !important;
+	}
+
+	#sideMenu .closeBtn {
+    right: -34px;
+    top: 15px;
+    width: 2.1rem;
+    height: 2.1rem;
+    background-position: -319px 0;
+	}	
+
+	#sideMenu .depth1 {
+		padding:27px;
+	}
+
+	#sideMenu .depth1 > li > a {
+    height: 16.5px;
+    background-position: var(--mleft) calc(var(--mtop) / 2);
+	}
+
+	#sideMenu .depth1 > li > a.on {
+    background-position: calc(var(--w) * -1 - 20px) var(--top);
+	}
+
+	#sideMenu .depth2 {
+    margin-top: 23px;
+	}
+
+	#sideMenu .depth2 > li > a {
+    height: 1.4rem;
+	}
+
+	#sideMenu .depth2 > li:not(:last-child) {
+		margin-bottom: 1.4rem;
+	}
+
+	#sideMenu .popular .depth2 > li > a {
+    background-position-y:calc(-39px - var(--i) * 29px);
+	}
+
+	#sideMenu .popular .depth2 > li.on > a {
+    background-position-x:calc(var(--mw) / 2 * -1 - 20px);
+	}
+
+	#sideMenu .depth1 > li:not(:last-child) {
+    margin-bottom: 68px;
+	}
+
+	#sideMenu .tag .depth2 > li > a {
+    background-position: 0 calc(-188px - var(--i) * 29px);
+	}	
+
+	/* main */
+	main {
+		padding-top: 50px;
+	}	
+
+	#contents {
+    padding: 20px 0 8px 0;
+	}
+
+	#contents .title {
+    height: 16px;
+    background-position: 0 0;
+    margin: 0 15px 14px;
+	}
+
+	.tabMenu p {
+		font-size: 1.4rem;
+	}
+
+	.tabMenu button {
+    height: 3.8rem;
+	}
+
+	.listItemBox .tit{
+    font-size: 1.6rem;
+	}
+
+	.listItemBox .writer,
+	.listItemBox .hashTag li {
+		font-size: 1.3rem;
+	}
+
+	.listItemBox .writer {
+		margin-top: 10px;
+	}
+
+	.listItemBox .hashTag {
+    margin-top: 20px;
+	}	
+
+	.listItemBox .txtBox {
+    padding: 20px 15px;
+	}	
+
+	.listItemBox li.on .tit span::before {
+    background-position-y: -32px;
+    width: 16px;
+    height: 16px;
+		background-size: 340px 510px;
+		top:2px;
+	}	
+
+	.listItemBox li[data-type='n'] .tit span::before {
+    background-position-x: -303px;
+	}	
+
+	.listItemBox li[data-type='h'] .tit span::before {
+    background-position-x: -324px;
+	}	
+
+	.listItemBox .tit span {
+    text-indent: 22px;
+	}
+}
