@@ -32,10 +32,9 @@ $(function () {
 		dots:false,
 		draggable:true,
 		slidesToShow: 5,
-		infinite: true,
 		responsive: [
 			{
-				breakpoint: 1280,
+				breakpoint: 1281,
 				settings: {
 					slidesToShow: 1
 				}
@@ -50,10 +49,9 @@ $(function () {
 		dots:false,
 		draggable:true,
 		slidesToShow: 2,
-		infinite: true,
 		responsive: [
 			{
-				breakpoint: 1280,
+				breakpoint: 1281,
 				settings: {
 					slidesToShow: 1
 				}
@@ -68,11 +66,10 @@ $(function () {
 		dots:false,
 		draggable:true,
 		slidesToShow: 1,
-		infinite: true,
 		centerPadding: '18.5774%',		
 		responsive: [
 			{
-				breakpoint: 1280,
+				breakpoint: 1281,
 				settings: {
 					slidesToShow: 1,
 					centerMode: false,

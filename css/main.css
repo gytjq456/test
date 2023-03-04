@@ -347,9 +347,8 @@ main {
 	border-radius: 2px;
 	padding:0 10px;
 	height: 24px;
-	line-height: 24px;
+	line-height: 26px;
 	font-size: 14px;
-	
 	font-weight: 700;
 } 
 
@@ -496,6 +495,7 @@ main {
 .popularStory .new .slickSlider .slick-list {
 	max-width: 370px;
 	margin: 0 auto;
+	overflow: hidden;
 }
 
 .popularStory .new .slick-arrow { 
@@ -523,8 +523,12 @@ main {
 	left:10px;
 }
 
+.popularStory .new .thumSlide {
+
+}
+
 .popularStory .new .thumSlide .item {
-	margin:0 5px;
+	/* margin:0 5px; */
 }
 
 .popularStory .new .thumTxtSlide .item > div {
