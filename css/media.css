@@ -13,7 +13,7 @@
 
 	#sideMenu a, 
 	.sprite {
-		background-image: url(image/sprite_mobile.png);
+		background-image: url(../image/sprite_mobile.png);
 		width: var(--mw);
 	}
 	
@@ -222,7 +222,7 @@
 		left:0;
 		top:4px;
 		transform: translateY(0);
-		background-image: url(image/sprite_mobile.png);	
+		background-image: url(../image/sprite_mobile.png);	
 	}
 
 	.listItemBox li[data-type='n'] .tit span::before {
@@ -346,7 +346,7 @@
     width: 9px;
     height: 15px;
     background-repeat: no-repeat;
-    background-image: url(image/sprite_mobile.png);
+    background-image: url(../image/sprite_mobile.png);
 	}
 
 	.popularStory .new img {
