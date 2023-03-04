@@ -493,7 +493,7 @@ main {
 }
 
 .popularStory .new .slickSlider .slick-list {
-	max-width: 370px;
+	max-width: 369px;
 	margin: 0 auto;
 	overflow: hidden;
 }
