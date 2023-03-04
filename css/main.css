@@ -40,6 +40,7 @@ header #logo a{
 /* main */
 main {
 	padding-top: 64px;
+	overflow: hidden;
 }
 .flexBox {
 	display: flex;
