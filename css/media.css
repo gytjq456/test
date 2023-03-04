@@ -237,6 +237,7 @@
 		-webkit-line-clamp: 2;
 		max-width: 100%;
 		padding-right: 0;
+		line-height: 1.3125;
 	}
 	
 	/* 인기 스토리 */
