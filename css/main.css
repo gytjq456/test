@@ -60,7 +60,7 @@ main {
 .sprite {
 	display: inline-block;
 	background-repeat: no-repeat;
-	background-image: url(/image/sprite_pc.png);
+	background-image: url(image/sprite_pc.png);
 	width: var(--w);
 	display: block;
 }
@@ -296,7 +296,7 @@ main {
 	width: 16px;
 	height: 16px;
 	background-repeat: no-repeat;
-	background-image: url(/image/sprite_pc.png);		
+	background-image: url(image/sprite_pc.png);		
 	background-position-y: -215px;
 	position: absolute;
 	right:0;
@@ -512,7 +512,7 @@ main {
 	opacity: 1;
 	z-index: 10;
 	background-repeat: no-repeat;
-	background-image: url(/image/sprite_pc.png);	
+	background-image: url(image/sprite_pc.png);	
 }
 
 .popularStory .new .slick-next {
@@ -589,7 +589,7 @@ main {
 	width: 100%;
 	height: 100%;
 	background-repeat: no-repeat;
-	background-image: url(/image/sprite_pc.png);	
+	background-image: url(image/sprite_pc.png);	
 	background-position-y: 0px;
 	position: absolute;
 	left:0;
