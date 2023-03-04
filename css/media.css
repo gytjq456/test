@@ -373,27 +373,21 @@
 	}
 
 	.popularStory .slideToon {
-		margin-top: 43px;
-	}
-
-	.popularStory .slideToon .slickBox{ 
 		max-width: 592px;
-		margin:0 auto;
-	}
-
-	.popularStory .slideToon .slick-list { 
-		overflow: hidden;
+		margin:43px auto 0;
 	}
 
 	.popularStory .slideToon .slick-dots { 
-		margin-top: 30px;
 		display: flex;
 		justify-content: center;
 		gap: 14px;
+		overflow: hidden;
+		margin:0 30px;
 	}
 	
 	.popularStory .slideToon .slick-dots button { 
 		text-indent: -9999px;
+		overflow: hidden;
 		width: 14px;
 		height: 14px;
 		border-radius: 50%;
@@ -405,16 +399,17 @@
 	}
 
 	.popularStory .slideToon .slick-arrow {
-		transform: translateY(-26px);
-		top:100%;
+		position: static;
 	}
 
-	.popularStory .slideToon .slick-prev {
-		left:0;
-		
+	.popularStory .slideToon .slick-arrow {
+		transform: translateY(0);
 	}
-	.popularStory .slideToon .slick-next {
-		right:0;
+	.popularStory .slideToon .controls {
+		margin-top: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 
 	/* footer */
@@ -634,7 +629,6 @@
 
 
 	.popularStory .new .slideList {
-		/* display: flex; */
 		flex-direction: column;
 		gap: 28px;
 	}
@@ -658,6 +652,11 @@
 
 	.popularStory .slideToon {
     margin-top: 22px;
+	}	
+
+	.popularStory .slideToon .slick-dots { 
+		gap: 7px;
+		margin:0 15px;
 	}	
 
 }

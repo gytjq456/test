@@ -60,9 +60,19 @@ $(function () {
 	})
 
 	let slideToon = $('.slideToon')
-	slideToon.find('.slickBox').not(".slick-initialized").slick({
+	let slideToonSlick = slideToon.find('.slickBox')
+	let slideToonDots = slideToon.find('.slick-dots')
+
+	slideToon.find('.item').each(function () { 
+		slideToonDots.append('<li><button></button></li>')
+	})
+
+	let slideToonDotsLi = slideToonDots.find('li')
+	slideToonDotsLi.eq(0).addClass('slick-active');
+
+	slideToonSlick.not(".slick-initialized").slick({
 		centerMode: true,
-		arrows: true,
+		arrows: false,
 		dots:false,
 		draggable:true,
 		slidesToShow: 1,
@@ -73,31 +83,32 @@ $(function () {
 				settings: {
 					slidesToShow: 1,
 					centerMode: false,
-					dots: true,
-					arrows: true,
 				}
 			},		
 		]		
 	})
 
-	let winW;
-	$(window).on('load resize', function () { 
-		winW = $(window).width();
-		if (winW <= 1280) { 
-			let slideToonDots = $('.slideToon .slick-dots');
-			let dotslin = slideToonDots.find('li').length;
-			let slideToonDotsW = 14 * dotslin + (14 * (dotslin - 1));
-			let slideToonPrev = slideToon.find('.slick-prev');
-			let slideToonNext = slideToon.find('.slick-next');
-			slideToonPrev.css({
-				left: `calc(50% - ${slideToonDotsW}px - 30px)`
-			})
-			slideToonNext.css({
-				right: `calc(50% - ${slideToonDotsW}px - 30px)`
-			})
-		}
+	slideToon.find('.slick-prev').click(function(){
+		slideToonSlick.slick('slickPrev');
+	});
+	
+	slideToon.find('.slick-next').click(function(){
+		slideToonSlick.slick('slickNext');
+	});
+
+	slideToonSlick.on('beforeChange', function(event, _ref, currentSlide, nextSlide){
+		console.log(_ref)
+		slideToonDotsLi.removeClass('slick-active')
+		slideToonDotsLi.eq(nextSlide).addClass('slick-active')
+	});
+
+	slideToonDotsLi.on('click', function () { 
+		let idx = $(this).index();
+		slideToonSlick.slick('slickGoTo', idx);
 	})
 
+
+	// 모바일 메뉴
 	let m_MenuBtn = $('.m_MenuBtn');
 	let dim = $('.dim');
 	let sideMenuClose = sideMenu.find('.closeBtn');

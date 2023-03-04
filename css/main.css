@@ -557,6 +557,7 @@ main {
 
 .popularStory .slideToon {
 	margin-top: 78px;
+	position: relative;
 	line-height: 1;
 }
 
