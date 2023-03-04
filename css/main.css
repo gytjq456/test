@@ -363,6 +363,7 @@ main {
 	height: 18px;
 	background-position: 0 calc(-482px - (38px * var(--i)));
 	margin-bottom: 15px;
+	text-indent: -9999px;
 }
 
 .popularStory { 
@@ -375,10 +376,6 @@ main {
 
 .popularStory .best {
 	margin-bottom: 60px;
-}
-
-.popularStory .best .subTitle {
-	text-indent: -9999px;
 }
 
 .popularStory .best .list {
@@ -434,6 +431,7 @@ main {
 
 .popularStory .notice > article{
 	width: 50%;
+	min-height: 179px;
 }
 
 .popularStory .ranking .list { 
@@ -444,7 +442,7 @@ main {
 }
 
 .popularStory .ranking li {
-	padding:7px 14px 7px 10px;
+	padding:11px 14px 10px 10px;
 	border-bottom:1px solid #eee;
 	display: flex;
 	justify-content: space-between;
@@ -473,7 +471,7 @@ main {
 
 .popularStory .new .slideList {
 	background: #fff;
-	padding: 10px;
+	padding: 11px 10px;
 }
 
 .popularStory .new .slideList > div:not(:last-child) {

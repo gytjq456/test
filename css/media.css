@@ -244,16 +244,13 @@
 	.subTitle {
 		margin-bottom: 1.6rem;
 		height: auto;
+		background: none;
+		text-indent: 0;
+		font-size: 2.8rem;
 	}
 	.popularStory {
     padding: 40px 0px;
 	}	
-
-	.popularStory .best .subTitle {
-		text-indent: 0;
-		font-size: 2.8rem;
-		background: none;
-	}
 
 	.popularStory .best {
 		max-width: 580px;
