@@ -245,12 +245,12 @@
 	.subTitle {
 		margin-bottom: 1.6rem;
 		height: auto;
-		background: none;
+		background-image: none !important;
 		text-indent: 0;
 		font-size: 2.8rem;
 	}
 	.popularStory {
-    padding: 40px 0px;
+    padding: 40px 0px 80px;
 	}	
 
 	.popularStory .best {
@@ -268,16 +268,16 @@
 	}
 
 	.popularStory .best .list li:nth-child(1) .txt {
-		font-size: 25px;
+		font-size: 2.5rem;
 	}
 
 	.popularStory .best .list li:nth-child(1) .txt {
 		height: 13.4rem;
-		padding:0 4rem;
+		padding:0 1.6em;
 	}
 
 	.popularStory .best .list .txt {
-		padding:0 2rem;
+		padding:0 1.25em;
 		height: 6.7rem;
 		font-size: 1.6rem;
 	}
@@ -326,6 +326,7 @@
 
 	.popularStory .new .slickSlider .slick-list {
 		max-width: 20.9rem;
+		width: 100%;
 		overflow: hidden;
 	}
 	.popularStory .new .thumSlide .item img {
@@ -535,6 +536,8 @@
     height: 3.8rem;
 	}
 
+
+	/*  인기 블로그 */
 	.listItemBox .tit{
     font-size: 1.6rem;
 	}
@@ -575,4 +578,86 @@
 	.listItemBox .tit span {
     text-indent: 22px;
 	}
+
+	.listItemBox .hashTag ul {
+    gap: 7px 5px;
+	}	
+
+
+	/*  인기 스토리 */
+	.subTitle {
+		font-size: 1.4rem;
+	}
+
+	.popularStory {
+    padding: 20px 0px 80px;
+	}
+
+	.popularStory .best .list li:nth-child(1) .txt {
+		height: 6.7rem;
+		font-size: 1.4rem;
+	}
+
+	.popularStory .best .list .txt br {
+		display: none;
+	}
+
+	.popularStory .best .list .txt {
+		font-size: 1.2rem;
+		height: 4.35rem;
+	}	
+
+
+	/* notice  */
+	.popularStory .notice {
+		gap: 20px;
+	}
+
+	.popularStory .new h4 {
+    font-size: 1.2rem;
+	}	
+
+	/* ranking */
+	.popularStory .ranking li {
+    padding: 7px;
+	}	
+
+	.popularStory .ranking li a {
+    font-size: 1.2rem;
+	}	
+
+	.popularStory .ranking .starPoint {
+    width: 63.5px;
+    height: 10.5px;
+    background-position: -276.5px calc(-61.5px - (22.5px * var(--i)));
+	}	
+
+
+	.popularStory .new .slideList {
+		/* display: flex; */
+		flex-direction: column;
+		gap: 28px;
+	}
+
+	.popularStory .new .thumSlide .item img {
+		max-width: inherit;
+	}
+
+	.popularStory .new .slideList > div {
+		width: 100%;
+	}
+
+	.popularStory .new .thumTxtSlide p {
+    font-size: 1.2rem;
+	}	
+
+	/* slideToon */
+	.slideToon  {
+		padding:0 15px;
+	}
+
+	.popularStory .slideToon {
+    margin-top: 22px;
+	}	
+
 }
